@@ -602,7 +602,7 @@
 		<key>NvidiaSingle</key>
 		<false/>
 		<key>ig-platform-id</key>
-		<string>0x19160000</string>
+		<string>0x191b0000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -907,7 +907,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02720600GUFF4P1M</string>
+		<string>C027246004NHCF9JC</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -935,9 +935,9 @@
 		<key>ProductName</key>
 		<string>MacBookPro13,3</string>
 		<key>SerialNumber</key>
-		<string>C02TQ2Y9GTFN</string>
+		<string>C02TV058GTFN</string>
 		<key>SmUUID</key>
-		<string>35511AC7-4650-47A5-82E5-925A7CF865FA</string>
+		<string>4AF10FAF-5A93-49ED-9660-D314BF426944</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
