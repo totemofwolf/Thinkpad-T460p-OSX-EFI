@@ -466,7 +466,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 kext-dev-mode=1</string>
+		<string>slide=0 dart=0 nv_disable=1 kext-dev-mode=1</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -480,12 +480,14 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>10</integer>
+		<integer>3</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
 	<key>CPU</key>
 	<dict>
+		<key>HWPEnable</key>
+		<true/>
 		<key>UseARTFrequency</key>
 		<false/>
 	</dict>
@@ -494,7 +496,23 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>3</integer>
+			<string>No</string>
+		</dict>
+		<key>NoDefaultProperties</key>
+		<true/>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>device-id</key>
+				<data>
+				cKEAAA==
+				</data>
+				<key>layout-id</key>
+				<data>
+				HAAAAA==
+				</data>
+			</dict>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -630,7 +648,7 @@
 				<key>Comment</key>
 				<string>disable port limit in XHCI kext (credit PMHeart)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				g32UDw+DlwQAAA==
@@ -708,7 +726,7 @@
 				<key>Comment</key>
 				<string>change 15 port limit to 26 in XHCI kext (100-series)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				g710////EA==
