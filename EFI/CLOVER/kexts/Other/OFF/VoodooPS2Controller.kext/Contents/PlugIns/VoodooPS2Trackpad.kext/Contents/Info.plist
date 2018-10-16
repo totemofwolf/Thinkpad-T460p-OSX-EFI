@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>16G29</string>
+	<string>17F45c</string>
 	<key>CFBundleExecutable</key>
 	<string>VoodooPS2Trackpad</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.8.27, Copyright Apple Computer, Inc. 2002-2003, mackerintel 2008, RehabMan 2012-2013</string>
+	<string>1.8.32, Copyright Apple Computer, Inc. 2002-2003, mackerintel 2008, RehabMan 2012-2013</string>
 	<key>CFBundleIdentifier</key>
 	<string>org.rehabman.voodoo.driver.PS2Trackpad</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.8.27</string>
+	<string>1.8.32</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,21 +25,21 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.8.27</string>
+	<string>1.8.32</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>8E3004b</string>
+	<string>9E145</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>12D75</string>
+	<string>16E185</string>
 	<key>DTSDKName</key>
 	<string>macosx10.12</string>
 	<key>DTXcode</key>
-	<string>0833</string>
+	<string>0930</string>
 	<key>DTXcodeBuild</key>
-	<string>8E3004b</string>
+	<string>9E145</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>ALPS GlidePoint</key>
@@ -239,9 +239,9 @@
 				<key>Default</key>
 				<dict>
 					<key>BogusDeltaThreshX</key>
-					<integer>400</integer>
+					<integer>0</integer>
 					<key>BogusDeltaThreshY</key>
-					<integer>350</integer>
+					<integer>0</integer>
 					<key>ButtonCount</key>
 					<integer>3</integer>
 					<key>CenterX</key>
@@ -256,28 +256,7 @@
 					<integer>300000000</integer>
 					<key>ClickPadTrackBoth</key>
 					<true/>
-					<key>Darwin 16.x</key>
-					<dict>
-						<key>ApplePreferenceCapability</key>
-						<true/>
-						<key>ApplePreferenceIdentifier</key>
-						<string>com.apple.AppleMultitouchTrackpad</string>
-						<key>MT Built-in</key>
-						<true/>
-						<key>MTHIDDevice</key>
-						<true/>
-						<key>SupportsGestureScrolling</key>
-						<true/>
-						<key>TrackpadEmbedded</key>
-						<true/>
-						<key>TrackpadFourFingerGestures</key>
-						<false/>
-						<key>TrackpadSecondaryClickCorners</key>
-						<true/>
-						<key>TrackpadThreeFingerDrag</key>
-						<false/>
-					</dict>
-					<key>Darwin 17.x</key>
+					<key>Darwin 16+</key>
 					<dict>
 						<key>ApplePreferenceCapability</key>
 						<true/>
@@ -313,9 +292,9 @@
 					<key>DisableZoneTop</key>
 					<integer>99999</integer>
 					<key>DivisorX</key>
-					<integer>1</integer>
+					<integer>5</integer>
 					<key>DivisorY</key>
-					<integer>1</integer>
+					<integer>5</integer>
 					<key>DoubleTapThresholdX</key>
 					<integer>100</integer>
 					<key>DoubleTapThresholdY</key>
@@ -357,7 +336,7 @@
 					<key>MomentumScrollSamplesMin</key>
 					<integer>3</integer>
 					<key>MomentumScrollThreshY</key>
-					<integer>6</integer>
+					<integer>18</integer>
 					<key>MomentumScrollTimer</key>
 					<integer>10000000</integer>
 					<key>MouseCount</key>
@@ -373,15 +352,15 @@
 					<key>MouseScrollMultiplierY</key>
 					<integer>20</integer>
 					<key>MultiFingerHorizontalDivisor</key>
-					<integer>1</integer>
+					<integer>13</integer>
 					<key>MultiFingerVerticalDivisor</key>
-					<integer>1</integer>
+					<integer>13</integer>
 					<key>MultiFingerWLimit</key>
 					<integer>9</integer>
 					<key>QuietTimeAfterTyping</key>
 					<integer>500000000</integer>
 					<key>Resolution</key>
-					<integer>2400</integer>
+					<integer>400</integer>
 					<key>RightClickZoneBottom</key>
 					<integer>0</integer>
 					<key>RightClickZoneLeft</key>
@@ -395,7 +374,7 @@
 					<key>ScrollDeltaThreshY</key>
 					<integer>0</integer>
 					<key>ScrollResolution</key>
-					<integer>2800</integer>
+					<integer>400</integer>
 					<key>SkipPassThrough</key>
 					<false/>
 					<key>SmoothInput</key>
@@ -417,7 +396,7 @@
 					<key>TapThresholdY</key>
 					<integer>50</integer>
 					<key>USBMouseStopsTrackpad</key>
-					<integer>1</integer>
+					<integer>0</integer>
 					<key>UnitsPerMMX</key>
 					<integer>50</integer>
 					<key>UnitsPerMMY</key>
@@ -427,7 +406,7 @@
 					<key>UseHighRate</key>
 					<true/>
 					<key>VerticalScrollDivisor</key>
-					<integer>1</integer>
+					<integer>0</integer>
 					<key>WakeDelay</key>
 					<integer>1000</integer>
 					<key>ZLimit</key>
@@ -487,16 +466,32 @@
 				</dict>
 				<key>LENOVO</key>
 				<dict>
-					<key>BogusDeltaThreshX</key>
-					<integer>400</integer>
-					<key>BogusDeltaThreshY</key>
-					<integer>350</integer>
-					<key>ClickPad</key>
+					<key>T420</key>
+					<string>Thinkpad_TrackPad</string>
+					<key>T460</key>
+					<string>Thinkpad_ClickPad</string>
+					<key>T560</key>
+					<string>Thinkpad_ClickPad</string>
+					<key>Thinkpad_ClickPad</key>
 					<dict>
+						<key>BogusDeltaThreshX</key>
+						<integer>100</integer>
+						<key>BogusDeltaThreshY</key>
+						<integer>100</integer>
+						<key>Clicking</key>
+						<true/>
+						<key>DragLockTempMask</key>
+						<integer>262148</integer>
+						<key>DynamicEWMode</key>
+						<false/>
 						<key>EdgeBottom</key>
 						<integer>0</integer>
+						<key>FakeMiddleButton</key>
+						<false/>
 						<key>FingerZ</key>
 						<integer>30</integer>
+						<key>HWResetOnStart</key>
+						<true/>
 						<key>MaxTapTime</key>
 						<integer>100000000</integer>
 						<key>MouseMultiplierX</key>
@@ -507,39 +502,39 @@
 						<integer>2</integer>
 						<key>MouseScrollMultiplierY</key>
 						<integer>2</integer>
+						<key>PalmNoAction When Typing</key>
+						<true/>
+						<key>ScrollResolution</key>
+						<integer>800</integer>
+						<key>SmoothInput</key>
+						<true/>
+						<key>Thinkpad</key>
+						<true/>
+						<key>UnsmoothInput</key>
+						<true/>
 					</dict>
-					<key>Clicking</key>
-					<true/>
-					<key>DragLock</key>
-					<false/>
-					<key>DragLockTempMask</key>
-					<integer>262148</integer>
-					<key>Dragging</key>
-					<false/>
-					<key>DynamicEWMode</key>
-					<false/>
-					<key>FakeMiddleButton</key>
-					<false/>
-					<key>PalmNoAction When Typing</key>
-					<true/>
-					<key>ScrollResolution</key>
-					<integer>800</integer>
-					<key>SmoothInput</key>
-					<true/>
-					<key>T420</key>
-					<string>TrackPad</string>
-					<key>T460</key>
-					<string>ClickPad</string>
-					<key>T560</key>
-					<string>ClickPad</string>
-					<key>TrackPad</key>
+					<key>Thinkpad_TrackPad</key>
 					<dict>
+						<key>BogusDeltaThreshX</key>
+						<integer>100</integer>
+						<key>BogusDeltaThreshY</key>
+						<integer>100</integer>
+						<key>Clicking</key>
+						<true/>
 						<key>DivisorX</key>
 						<integer>1</integer>
 						<key>DivisorY</key>
 						<integer>1</integer>
+						<key>DragLockTempMask</key>
+						<integer>262148</integer>
+						<key>DynamicEWMode</key>
+						<false/>
+						<key>FakeMiddleButton</key>
+						<false/>
 						<key>FingerZ</key>
 						<integer>47</integer>
+						<key>HWResetOnStart</key>
+						<true/>
 						<key>MaxTapTime</key>
 						<integer>100000000</integer>
 						<key>MomentumScrollThreshY</key>
@@ -556,15 +551,25 @@
 						<integer>4</integer>
 						<key>MultiFingerVerticalDivisor</key>
 						<integer>4</integer>
+						<key>PalmNoAction When Typing</key>
+						<true/>
 						<key>Resolution</key>
 						<integer>3200</integer>
 						<key>ScrollDeltaThreshX</key>
 						<integer>10</integer>
 						<key>ScrollDeltaThreshY</key>
 						<integer>10</integer>
+						<key>ScrollResolution</key>
+						<integer>800</integer>
+						<key>SmoothInput</key>
+						<true/>
+						<key>Thinkpad</key>
+						<true/>
+						<key>UnsmoothInput</key>
+						<true/>
 					</dict>
-					<key>UnsmoothInput</key>
-					<true/>
+					<key>X1CG3</key>
+					<string>Thinkpad_ClickPad</string>
 				</dict>
 			</dict>
 			<key>ProductID</key>
@@ -584,7 +589,7 @@
 		<key>com.apple.kpi.mach</key>
 		<string>9.0.0</string>
 		<key>org.rehabman.voodoo.driver.PS2Controller</key>
-		<string>1.8.27</string>
+		<string>1.8.32</string>
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Console</string>
