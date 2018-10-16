@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>18A391</string>
+	<string>17F45c</string>
 	<key>CFBundleExecutable</key>
 	<string>VoodooPS2Trackpad</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.9.2, Copyright Apple Computer, Inc. 2002-2003, mackerintel 2008, RehabMan 2012-2013</string>
+	<string>1.8.32, Copyright Apple Computer, Inc. 2002-2003, mackerintel 2008, RehabMan 2012-2013</string>
 	<key>CFBundleIdentifier</key>
 	<string>org.rehabman.voodoo.driver.PS2Trackpad</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.9.2</string>
+	<string>1.8.32</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,21 +25,21 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.9.2</string>
+	<string>1.8.32</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>9F2000</string>
+	<string>9E145</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>12D75</string>
+	<string>16E185</string>
 	<key>DTSDKName</key>
-	<string>macosx10.8</string>
+	<string>macosx10.12</string>
 	<key>DTXcode</key>
-	<string>0941</string>
+	<string>0930</string>
 	<key>DTXcodeBuild</key>
-	<string>9F2000</string>
+	<string>9E145</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>ALPS GlidePoint</key>
@@ -296,9 +296,9 @@
 					<key>DivisorY</key>
 					<integer>5</integer>
 					<key>DoubleTapThresholdX</key>
-					<integer>150</integer>
+					<integer>100</integer>
 					<key>DoubleTapThresholdY</key>
-					<integer>150</integer>
+					<integer>100</integer>
 					<key>DragExitDelayTime</key>
 					<integer>1000000000</integer>
 					<key>DragLockTempMask</key>
@@ -357,10 +357,6 @@
 					<integer>13</integer>
 					<key>MultiFingerWLimit</key>
 					<integer>9</integer>
-					<key>ProcessBluetoothMouseStopsTrackpad</key>
-					<true/>
-					<key>ProcessUSBMouseStopsTrackpad</key>
-					<true/>
 					<key>QuietTimeAfterTyping</key>
 					<integer>500000000</integer>
 					<key>Resolution</key>
@@ -396,9 +392,9 @@
 					<key>SwipeDeltaY</key>
 					<integer>800</integer>
 					<key>TapThresholdX</key>
-					<integer>75</integer>
+					<integer>50</integer>
 					<key>TapThresholdY</key>
-					<integer>75</integer>
+					<integer>50</integer>
 					<key>USBMouseStopsTrackpad</key>
 					<integer>0</integer>
 					<key>UnitsPerMMX</key>
@@ -520,9 +516,9 @@
 					<key>Thinkpad_TrackPad</key>
 					<dict>
 						<key>BogusDeltaThreshX</key>
-						<integer>800</integer>
+						<integer>100</integer>
 						<key>BogusDeltaThreshY</key>
-						<integer>800</integer>
+						<integer>100</integer>
 						<key>Clicking</key>
 						<true/>
 						<key>DivisorX</key>
@@ -578,8 +574,6 @@
 			</dict>
 			<key>ProductID</key>
 			<integer>547</integer>
-			<key>RM,deliverNotifications</key>
-			<true/>
 			<key>VendorID</key>
 			<integer>1452</integer>
 		</dict>
@@ -595,7 +589,7 @@
 		<key>com.apple.kpi.mach</key>
 		<string>9.0.0</string>
 		<key>org.rehabman.voodoo.driver.PS2Controller</key>
-		<string>1.9.2</string>
+		<string>1.8.32</string>
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Console</string>
