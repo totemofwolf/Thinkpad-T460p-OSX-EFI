@@ -19,7 +19,7 @@
 				<key>FixIntelGfx</key>
 				<true/>
 				<key>FixMutex</key>
-				<false/>
+				<true/>
 				<key>FixShutdown</key>
 				<false/>
 				<key>FixWAK</key>
@@ -424,6 +424,8 @@
 		</array>
 		<key>FixHeaders</key>
 		<true/>
+		<key>HaltEnabler</key>
+		<true/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -503,11 +505,6 @@
 		<dict>
 			<key>Inject</key>
 			<string>No</string>
-		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>IntelGFX</key>
-			<string>0x191B8086</string>
 		</dict>
 		<key>NoDefaultProperties</key>
 		<true/>
@@ -675,49 +672,9 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>change 15 port limit to 26 in XHCI kext</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				g32MEA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.13.0,10.13.1,10.13.2,10.13.3</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
-				<key>Replace</key>
-				<data>
-				g32MGw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.12.0 ( (based on Austere.J patch)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				iUXIOcZ2UQ==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				iUXIOcbrUQ==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>0x591b0000, 32MB BIOS, 19MB framebuffer 9MB cursor bytes (credit RehabMan)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				AABgAgAAUAE=
@@ -735,7 +692,7 @@
 				<key>Comment</key>
 				<string>0x591b0000, 0105 instead of 0306, HDMI</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				AAAIAAIAAACYAAAAAQUJAAAEAACHAQAAAgQKAAAEAACH
@@ -771,26 +728,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>disable port limit in XHCI kext (credit PMHeart)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				g32UDw+DlwQAAA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				g32UD5CQkJCQkA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>IONVMeFamily Preferred Block Size 0x10 -&gt; 0x01, credit RehabMan based on 10.12 patch (c) Pike R. Alpha </string>
 				<key>Disabled</key>
 				<false/>
@@ -807,44 +744,6 @@
 				<key>Replace</key>
 				<data>
 				9sEBD4VBAQAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change %04x to xxxx for AppleBacklightInjector.kext (credit RehabMan)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				JTA0eA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleBacklight</string>
-				<key>Replace</key>
-				<data>
-				eHh4eA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change 15 port limit to 26 in XHCI kext (100-series)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				g710////EA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>AppleUSBXHCIPCI</string>
-				<key>Replace</key>
-				<data>
-				g710////Gw==
 				</data>
 			</dict>
 			<dict>
@@ -885,6 +784,44 @@
 				TIlduOtA
 				</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>0x191B0000 All Patch by FB-Patcher (credit headkaze)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AQMDAwAAIAIAAFABAAAAYGwFAAA=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AQMDAwAAMAEAAJAAAAAAgGwFAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>0x191B0000 Connector Patch by FB-Patcher (credit headkaze)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AAAIAAIAAACYAAAAAQUJAAAEAACHAQAAAgQKAAAEAACH
+				AQAA/wAAAAEAAAAgAAAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AAAIAAIAAACYAAAAAQUJAAAIAACHAQAAAgQKAAAIAACH
+				AQAA/wAAAAEAAAAgAAAA
+				</data>
+			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
@@ -907,7 +844,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C027246004NHCF9JC</string>
+		<string>C02720600GUFF4P1M</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -935,9 +872,9 @@
 		<key>ProductName</key>
 		<string>MacBookPro13,3</string>
 		<key>SerialNumber</key>
-		<string>C02TV058GTFN</string>
+		<string>C02TQ2Y9GTFN</string>
 		<key>SmUUID</key>
-		<string>4AF10FAF-5A93-49ED-9660-D314BF426944</string>
+		<string>35511AC7-4650-47A5-82E5-925A7CF865FA</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
