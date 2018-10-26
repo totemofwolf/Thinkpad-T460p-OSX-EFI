@@ -20,11 +20,25 @@
 | 📹摄像头        | √      |       |
 | USB-3.0        | √      |       |
 | 🔋电池        | √      |       |
-| 亮度快捷键        | √      |   F5,F6    |
+| 亮度快捷键       | √      |   F5,F6(Fn)    |
 | 声音快捷键        | √      |   F2,F3    |
 | 触摸板        | √      | 三指手势      |
 | HIDPI        | √      |  2560x1440     |
 | 睡眠💤唤醒        | √      |  🔌电源键     |
+
+## 我的目前工作系统是10.13，没折腾最新的
+
+> 安装时将ig-platform-id改为0x12345678（必须改，空着也不行！）并且设置啰嗦启动(-v)模式进入安装，另外可能还需要设置
+
+```
+<key>Intel</key>
+<true/>
+```
+
+
+参考：
+[10.12和10.13的核显framebuffer五国问题解决方案汇总](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1696023)
+
 
 ## HDMI && miniDP
 Inorder for hdmi to be able to output, you should add
@@ -40,7 +54,7 @@ and rebuild kext cache using : `sudo kextcache -i /`
 
 ## X86PlatformPlugin:
 
-> 通常，我们可以通过勾选config的"PlusinType"加载X86，来实现更完整的节能选选项，勾选后：
+> 通常，我们可以通过勾选config的"PlusinType"加载X86，来实现更完整的节能选项，勾选后：
 ``` bash
   ~ kextstat| grep -i x86
   142    1 0xffffff7f837f3000 0x17000    0x17000    com.apple.driver.X86PlatformPlugin (1.0.0) 75F8D5F2-9BB7-3709-987C-35B5C1FCB727 <117 64 22 13 11 7 6 5 4 3 1>
