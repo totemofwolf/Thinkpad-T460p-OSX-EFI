@@ -1,110 +1,102 @@
-45:247  32:527  Found UEFI Acpi 2.0 RSDP at 8FFFE014
-45:247  0:000  Saving ACPI tables from RSDP 8FFFE014 to EFI\CLOVER\ACPI\origin ...
-45:247  0:000   8FFFE014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
-45:266  0:018    (Xsdt: 8FFD1188, Rsdt: 8FFD10C4)
-45:266  0:000    8FFD1188: 'XSDT', 'TP-R07', Rev: 1, Len: 228 -> XSDT.aml
-45:283  0:017    8FFD10C4: 'RSDT', 'TP-R07', Rev: 1, Len: 132 -> RSDT.aml
-45:294  0:010    Tables in Xsdt: 24
-45:294  0:000    0. 8FFF6000: 'FACP', 'TP-R07', Rev: 5, Len: 244 -> FACP.aml
-45:311  0:016        (Dsdt: 8FFE1000, Facs: 8FF40000, XDsdt: 8FFE1000, XFacs: 0)
-45:311  0:000        8FFE1000: 'DSDT', 'TP-R07', Rev: 2, Len: 69018 -> DSDT.aml
-45:329  0:018        8FF40000: 'FACS', Ver: 2, Len: 64 -> FACS.aml
-45:344  0:014    1. 8FF57000: 'UEFI', 'TP-R07', Rev: 1, Len: 66 -> UEFI.aml
-45:362  0:018    2. 8FFF8000: 'SSDT', 'SaSsdt', Rev: 2, Len: 19863 -> SSDT-0-SaSsdt.aml
-45:384  0:022    3. 8FFF7000: 'SSDT', 'PerfTune', Rev: 2, Len: 1477 -> SSDT-1-PerfTune.aml
-45:401  0:017    4. 8FFF5000: 'ECDT', 'TP-R07', Rev: 1, Len: 82 -> ECDT.aml
-45:415  0:014    5. 8FFF4000: 'HPET', 'TP-R07', Rev: 1, Len: 56 -> HPET.aml
-45:431  0:015    6. 8FFF3000: 'APIC', 'TP-R07', Rev: 3, Len: 188 -> APIC.aml
-45:444  0:013    7. 8FFF2000: 'MCFG', 'TP-R07', Rev: 1, Len: 60 -> MCFG.aml
-45:463  0:018    8. 8FFDF000: 'SSDT', 'SataAhci', Rev: 1, Len: 6354 -> SSDT-2-SataAhci.aml
-45:481  0:018    9. 8FFDE000: 'DBGP', 'TP-R07', Rev: 1, Len: 52 -> DBGP.aml
-45:503  0:021    10. 8FFDD000: 'DBG2', 'TP-R07', Rev: 0, Len: 84 -> DBG2.aml
-45:517  0:014    11. 8FFDC000: 'BOOT', 'TP-R07', Rev: 1, Len: 40 -> BOOT.aml
-45:534  0:016    12. 8FFDB000: 'BATB', 'TP-R07', Rev: 2, Len: 74 -> BATB.aml
-45:553  0:019    13. 8FFDA000: 'SLIC', 'TP-R07', Rev: 1, Len: 374 -> SLIC.aml
-45:569  0:015    14. 8FFD9000: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1642 -> SSDT-3-Cpu0Ist.aml
-45:584  0:015    15. 8FFD8000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699 -> SSDT-4-CpuSsdt.aml (Found hidden SSDT 7 pcs)
-45:602  0:018        * 8FE24718: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1642  53 53 44 54 6A 06 00 00 02 5A 50 6D 52 65 66 00 Internal length = 1642 -> SSDT-x4_0-Cpu0Ist.aml
-45:618  0:015        * 8FE21618: 'SSDT', 'ApIst', Rev: 2, Len: 1450  53 53 44 54 AA 05 00 00 02 D0 50 6D 52 65 66 00 Internal length = 1450 -> SSDT-x4_1-ApIst.aml
-45:632  0:014        * 8FE21C18: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 975  53 53 44 54 CF 03 00 00 02 36 50 6D 52 65 66 00 Internal length = 975 -> SSDT-x4_2-Cpu0Cst.aml
-45:648  0:016        * 8FE22C18: 'SSDT', 'ApCst', Rev: 2, Len: 281  53 53 44 54 19 01 00 00 02 EC 50 6D 52 65 66 00 Internal length = 281 -> SSDT-x4_3-ApCst.aml
-45:662  0:013        * 8FE23F18: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 142  53 53 44 54 8E 00 00 00 02 2D 50 6D 52 65 66 00 Internal length = 142 -> SSDT-x4_4-Cpu0Hwp.aml
-45:679  0:017        * 8FE22A98: 'SSDT', 'ApHwp', Rev: 2, Len: 281  53 53 44 54 19 01 00 00 02 FF 50 6D 52 65 66 00 Internal length = 281 -> SSDT-x4_5-ApHwp.aml
-45:696  0:017        * 8FE22D98: 'SSDT', 'HwpLvt', Rev: 2, Len: 304  53 53 44 54 30 01 00 00 02 87 50 6D 52 65 66 00 Internal length = 304 -> SSDT-x4_6-HwpLvt.aml
-45:712  0:015  
-45:712  0:000    16. 8FFD7000: 'SSDT', 'CtdpB', Rev: 2, Len: 985 -> SSDT-5-CtdpB.aml
-45:725  0:013    17. 8FFD6000: 'MSDM', 'TP-R07', Rev: 3, Len: 85 -> MSDM.aml
-45:743  0:017    18. 8FFD4000: 'SSDT', 'NvOptTbl', Rev: 1, Len: 4101 -> SSDT-6-NvOptTbl.aml
-45:759  0:015    19. 8FFD3000: 'SSDT', 'SgPch', Rev: 2, Len: 1842 -> SSDT-7-SgPch.aml
-45:778  0:018    20. 8FFD2000: 'ASF!', 'TP-R07', Rev: 32, Len: 165 -> ASF!.aml
-45:791  0:013    21. 8FFFD000: 'FPDT', 'TP-R07', Rev: 1, Len: 68 -> FPDT.aml
-45:804  0:012    22. 8FFD0000: 'BGRT', 'TP-R07', Rev: 1, Len: 56 -> BGRT.aml
-45:823  0:019    23. 8FF1D000: 'UEFI', 'TP-R07', Rev: 1, Len: 318 -> UEFI.aml
-45:841  0:017    Tables in Rsdt: 24
-45:841  0:000    0. 8FFF6000: 'FACP', 'TP-R07', Rev: 5, Len: 244 -> RSDT-FACP.aml
-45:849  0:008        (Dsdt: 8FFE1000, Facs: 8FF40000, XDsdt: 8FFE1000, XFacs: 0)
-45:849  0:000        8FFE1000: 'DSDT', 'TP-R07', Rev: 2, Len: 69018 -> RSDT-DSDT.aml
-45:863  0:013        8FF40000: 'FACS', Ver: 2, Len: 64 -> RSDT-FACS.aml
-45:873  0:010    1. 8FF57000: 'UEFI', 'TP-R07', Rev: 1, Len: 66 -> RSDT-UEFI.aml
-45:884  0:010    2. 8FFF8000: 'SSDT', 'SaSsdt', Rev: 2, Len: 19863 -> RSDT-SSDT-8-SaSsdt.aml
-45:893  0:009    3. 8FFF7000: 'SSDT', 'PerfTune', Rev: 2, Len: 1477 -> RSDT-SSDT-9-PerfTune.aml
-45:904  0:010    4. 8FFF5000: 'ECDT', 'TP-R07', Rev: 1, Len: 82 -> RSDT-ECDT.aml
-45:912  0:008    5. 8FFF4000: 'HPET', 'TP-R07', Rev: 1, Len: 56 -> RSDT-HPET.aml
-45:921  0:008    6. 8FFF3000: 'APIC', 'TP-R07', Rev: 3, Len: 188 -> RSDT-APIC.aml
-45:929  0:008    7. 8FFF2000: 'MCFG', 'TP-R07', Rev: 1, Len: 60 -> RSDT-MCFG.aml
-45:941  0:011    8. 8FFDF000: 'SSDT', 'SataAhci', Rev: 1, Len: 6354 -> RSDT-SSDT-10-SataAhci.aml
-45:950  0:008    9. 8FFDE000: 'DBGP', 'TP-R07', Rev: 1, Len: 52 -> RSDT-DBGP.aml
-45:961  0:011    10. 8FFDD000: 'DBG2', 'TP-R07', Rev: 0, Len: 84 -> RSDT-DBG2.aml
-45:970  0:008    11. 8FFDC000: 'BOOT', 'TP-R07', Rev: 1, Len: 40 -> RSDT-BOOT.aml
-45:981  0:011    12. 8FFDB000: 'BATB', 'TP-R07', Rev: 2, Len: 74 -> RSDT-BATB.aml
-45:990  0:008    13. 8FFDA000: 'SLIC', 'TP-R07', Rev: 1, Len: 374 -> RSDT-SLIC.aml
-46:001  0:011    14. 8FFD9000: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1642 -> RSDT-SSDT-11-Cpu0Ist.aml
-46:010  0:008    15. 8FFD8000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699 -> RSDT-SSDT-12-CpuSsdt.aml (Found hidden SSDT 7 pcs)
-46:021  0:011        * 8FE24718: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1642  53 53 44 54 6A 06 00 00 02 5A 50 6D 52 65 66 00 Internal length = 1642 -> RSDT-SSDT-x12_0-Cpu0Ist.aml
-46:033  0:011        * 8FE21618: 'SSDT', 'ApIst', Rev: 2, Len: 1450  53 53 44 54 AA 05 00 00 02 D0 50 6D 52 65 66 00 Internal length = 1450 -> RSDT-SSDT-x12_1-ApIst.aml
-46:044  0:010        * 8FE21C18: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 975  53 53 44 54 CF 03 00 00 02 36 50 6D 52 65 66 00 Internal length = 975 -> RSDT-SSDT-x12_2-Cpu0Cst.aml
-46:053  0:009        * 8FE22C18: 'SSDT', 'ApCst', Rev: 2, Len: 281  53 53 44 54 19 01 00 00 02 EC 50 6D 52 65 66 00 Internal length = 281 -> RSDT-SSDT-x12_3-ApCst.aml
-46:062  0:008        * 8FE23F18: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 142  53 53 44 54 8E 00 00 00 02 2D 50 6D 52 65 66 00 
-46:062  0:000        * 8FE22A98: 'SSDT', 'ApHwp', Rev: 2, Len: 281  53 53 44 54 19 01 00 00 02 FF 50 6D 52 65 66 00 
-46:062  0:000        * 8FE22D98: 'SSDT', 'HwpLvt', Rev: 2, Len: 304  53 53 44 54 30 01 00 00 02 87 50 6D 52 65 66 00 
-46:062  0:000  
-46:062  0:000    16. 8FFD7000: 'SSDT', 'CtdpB', Rev: 2, Len: 985
-46:062  0:000    17. 8FFD6000: 'MSDM', 'TP-R07', Rev: 3, Len: 85
-46:062  0:000    18. 8FFD4000: 'SSDT', 'NvOptTbl', Rev: 1, Len: 4101
-46:062  0:000    19. 8FFD3000: 'SSDT', 'SgPch', Rev: 2, Len: 1842
-46:062  0:000    20. 8FFD2000: 'ASF!', 'TP-R07', Rev: 32, Len: 165
-46:062  0:000    21. 8FFFD000: 'FPDT', 'TP-R07', Rev: 1, Len: 68
-46:062  0:000    22. 8FFD0000: 'BGRT', 'TP-R07', Rev: 1, Len: 56
-46:062  0:000    23. 8FF1D000: 'UEFI', 'TP-R07', Rev: 1, Len: 318
-46:062  0:000  Found UEFI Acpi 1.0 RSDP at 8FFFE000
-46:062  0:000  Printing ACPI tables from RSDP 8FFFE000 ...
-46:062  0:000   8FFFE000: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
-46:062  0:000    (Rsdt: 8FFD1000)
-46:062  0:000    8FFD1000: 'RSDT', 'TP-R07', Rev: 1, Len: 128
-46:062  0:000    Tables in Rsdt: 23
-46:062  0:000    0. 8FFF6000: 'FACP', 'TP-R07', Rev: 5, Len: 244
-46:062  0:000        (Dsdt: 8FFE1000, Facs: 8FF40000, XDsdt: 8FFE1000, XFacs: 0)
-46:062  0:000        8FFE1000: 'DSDT', 'TP-R07', Rev: 2, Len: 69018
-46:063  0:001        8FF40000: 'FACS', Ver: 2, Len: 64
-46:063  0:000    1. 8FF57000: 'UEFI', 'TP-R07', Rev: 1, Len: 66
-46:063  0:000    2. 8FFF8000: 'SSDT', 'SaSsdt', Rev: 2, Len: 19863
-46:063  0:000    3. 8FFF7000: 'SSDT', 'PerfTune', Rev: 2, Len: 1477
-46:063  0:000    4. 8FFF5000: 'ECDT', 'TP-R07', Rev: 1, Len: 82
-46:063  0:000    5. 8FFF4000: 'HPET', 'TP-R07', Rev: 1, Len: 56
-46:063  0:000    6. 8FFF3000: 'APIC', 'TP-R07', Rev: 3, Len: 188
-46:063  0:000    7. 8FFF2000: 'MCFG', 'TP-R07', Rev: 1, Len: 60
-46:063  0:000    8. 8FFDF000: 'SSDT', 'SataAhci', Rev: 1, Len: 6354
-46:063  0:000    9. 8FFDE000: 'DBGP', 'TP-R07', Rev: 1, Len: 52
-46:063  0:000    10. 8FFDD000: 'DBG2', 'TP-R07', Rev: 0, Len: 84
-46:063  0:000    11. 8FFDC000: 'BOOT', 'TP-R07', Rev: 1, Len: 40
-46:063  0:000    12. 8FFDB000: 'BATB', 'TP-R07', Rev: 2, Len: 74
-46:063  0:000    13. 8FFD9000: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1642
-46:063  0:000    14. 8FFD8000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
-46:063  0:000    15. 8FFD7000: 'SSDT', 'CtdpB', Rev: 2, Len: 985
-46:063  0:000    16. 8FFD6000: 'MSDM', 'TP-R07', Rev: 3, Len: 85
-46:063  0:000    17. 8FFD4000: 'SSDT', 'NvOptTbl', Rev: 1, Len: 4101
-46:063  0:000    18. 8FFD3000: 'SSDT', 'SgPch', Rev: 2, Len: 1842
-46:063  0:000    19. 8FFD2000: 'ASF!', 'TP-R07', Rev: 32, Len: 165
-46:063  0:000    20. 8FFFD000: 'FPDT', 'TP-R07', Rev: 1, Len: 68
-46:063  0:000    21. 8FFD0000: 'BGRT', 'TP-R07', Rev: 1, Len: 56
-46:063  0:000    22. 8FF1D000: 'UEFI', 'TP-R07', Rev: 1, Len: 318
+20:322  10:637  Found UEFI Acpi 2.0 RSDP at AFFFE014
+20:322  0:000  Saving ACPI tables from RSDP AFFFE014 to EFI\CLOVER\ACPI\origin ...
+20:322  0:000   AFFFE014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+20:343  0:020    (Xsdt: AFFD1188, Rsdt: AFFD10C4)
+20:343  0:000    AFFD1188: 'XSDT', 'TP-R07', Rev: 1, Len: 228 -> XSDT.aml
+20:351  0:008    AFFD10C4: 'RSDT', 'TP-R07', Rev: 1, Len: 132 -> RSDT.aml
+20:361  0:009    Tables in Xsdt: 24
+20:361  0:000    0. AFFF6000: 'FACP', 'TP-R07', Rev: 5, Len: 244 -> FACP.aml
+20:370  0:009        (Dsdt: AFFE1000, Facs: AFF40000, XDsdt: AFFE1000, XFacs: 0)
+20:370  0:000        AFFE1000: 'DSDT', 'TP-R07', Rev: 2, Len: 69018 -> DSDT.aml
+20:382  0:011        AFF40000: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+20:393  0:011    1. AFF57000: 'UEFI', 'TP-R07', Rev: 1, Len: 66 -> UEFI.aml
+20:401  0:008    2. AFFF8000: 'SSDT', 'SaSsdt', Rev: 2, Len: 19863 -> SSDT-0-SaSsdt.aml
+20:411  0:009    3. AFFF7000: 'SSDT', 'PerfTune', Rev: 2, Len: 1477 -> SSDT-1-PerfTune.aml
+20:420  0:009    4. AFFF5000: 'ECDT', 'TP-R07', Rev: 1, Len: 82 -> ECDT.aml
+20:430  0:010    5. AFFF4000: 'HPET', 'TP-R07', Rev: 1, Len: 56 -> HPET.aml
+20:440  0:009    6. AFFF3000: 'APIC', 'TP-R07', Rev: 3, Len: 188 -> APIC.aml
+20:452  0:011    7. AFFF2000: 'MCFG', 'TP-R07', Rev: 1, Len: 60 -> MCFG.aml
+20:460  0:008    8. AFFDF000: 'SSDT', 'SataAhci', Rev: 1, Len: 6354 -> SSDT-2-SataAhci.aml
+20:471  0:010    9. AFFDE000: 'DBGP', 'TP-R07', Rev: 1, Len: 52 -> DBGP.aml
+20:480  0:009    10. AFFDD000: 'DBG2', 'TP-R07', Rev: 0, Len: 84 -> DBG2.aml
+20:490  0:010    11. AFFDC000: 'BOOT', 'TP-R07', Rev: 1, Len: 40 -> BOOT.aml
+20:501  0:010    12. AFFDB000: 'BATB', 'TP-R07', Rev: 2, Len: 74 -> BATB.aml
+20:510  0:009    13. AFFDA000: 'SLIC', 'TP-R07', Rev: 1, Len: 374 -> SLIC.aml
+20:520  0:009    14. AFFD9000: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1642 -> SSDT-3-Cpu0Ist.aml
+20:530  0:010    15. AFFD8000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699 -> SSDT-4-CpuSsdt.aml (Found hidden SSDT 7 pcs)
+20:540  0:009        * AFE24718: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1642  53 53 44 54 6A 06 00 00 02 5A 50 6D 52 65 66 00 Internal length = 1642 -> SSDT-x4_0-Cpu0Ist.aml
+20:552  0:011        * AFE21618: 'SSDT', 'ApIst', Rev: 2, Len: 1450  53 53 44 54 AA 05 00 00 02 D0 50 6D 52 65 66 00 Internal length = 1450 -> SSDT-x4_1-ApIst.aml
+20:562  0:010        * AFE21C18: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 975  53 53 44 54 CF 03 00 00 02 36 50 6D 52 65 66 00 Internal length = 975 -> SSDT-x4_2-Cpu0Cst.aml
+20:573  0:010        * AFE22C18: 'SSDT', 'ApCst', Rev: 2, Len: 281  53 53 44 54 19 01 00 00 02 EC 50 6D 52 65 66 00 Internal length = 281 -> SSDT-x4_3-ApCst.aml
+20:580  0:007        * AFE23F18: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 142  53 53 44 54 8E 00 00 00 02 2D 50 6D 52 65 66 00 Internal length = 142 -> SSDT-x4_4-Cpu0Hwp.aml
+20:590  0:009        * AFE22A98: 'SSDT', 'ApHwp', Rev: 2, Len: 281  53 53 44 54 19 01 00 00 02 FF 50 6D 52 65 66 00 Internal length = 281 -> SSDT-x4_5-ApHwp.aml
+20:604  0:014        * AFE22D98: 'SSDT', 'HwpLvt', Rev: 2, Len: 304  53 53 44 54 30 01 00 00 02 87 50 6D 52 65 66 00 Internal length = 304 -> SSDT-x4_6-HwpLvt.aml
+20:616  0:011  
+20:616  0:000    16. AFFD7000: 'SSDT', 'CtdpB', Rev: 2, Len: 985 -> SSDT-5-CtdpB.aml
+20:626  0:010    17. AFFD6000: 'MSDM', 'TP-R07', Rev: 3, Len: 85 -> MSDM.aml
+20:634  0:007    18. AFFD4000: 'SSDT', 'NvOptTbl', Rev: 1, Len: 4101 -> SSDT-6-NvOptTbl.aml
+20:648  0:013    19. AFFD3000: 'SSDT', 'SgPch', Rev: 2, Len: 1842 -> SSDT-7-SgPch.aml
+20:656  0:007    20. AFFD2000: 'ASF!', 'TP-R07', Rev: 32, Len: 165 -> ASF!.aml
+20:664  0:008    21. AFFFD000: 'FPDT', 'TP-R07', Rev: 1, Len: 68 -> FPDT.aml
+20:676  0:011    22. AFF1D000: 'UEFI', 'TP-R07', Rev: 1, Len: 318 -> UEFI.aml
+20:690  0:014    23. AFFD0000: 'BGRT', 'TP-R07', Rev: 1, Len: 56 -> BGRT.aml
+20:700  0:009    Tables in Rsdt: 24
+20:700  0:000    0. AFFF6000: 'FACP', 'TP-R07', Rev: 5, Len: 244
+20:700  0:000        (Dsdt: AFFE1000, Facs: AFF40000, XDsdt: AFFE1000, XFacs: 0)
+20:700  0:000        AFFE1000: 'DSDT', 'TP-R07', Rev: 2, Len: 69018
+20:701  0:001        AFF40000: 'FACS', Ver: 2, Len: 64
+20:701  0:000    1. AFF57000: 'UEFI', 'TP-R07', Rev: 1, Len: 66
+20:701  0:000    2. AFFF8000: 'SSDT', 'SaSsdt', Rev: 2, Len: 19863
+20:701  0:000    3. AFFF7000: 'SSDT', 'PerfTune', Rev: 2, Len: 1477
+20:701  0:000    4. AFFF5000: 'ECDT', 'TP-R07', Rev: 1, Len: 82
+20:701  0:000    5. AFFF4000: 'HPET', 'TP-R07', Rev: 1, Len: 56
+20:701  0:000    6. AFFF3000: 'APIC', 'TP-R07', Rev: 3, Len: 188
+20:701  0:000    7. AFFF2000: 'MCFG', 'TP-R07', Rev: 1, Len: 60
+20:701  0:000    8. AFFDF000: 'SSDT', 'SataAhci', Rev: 1, Len: 6354
+20:701  0:000    9. AFFDE000: 'DBGP', 'TP-R07', Rev: 1, Len: 52
+20:701  0:000    10. AFFDD000: 'DBG2', 'TP-R07', Rev: 0, Len: 84
+20:701  0:000    11. AFFDC000: 'BOOT', 'TP-R07', Rev: 1, Len: 40
+20:701  0:000    12. AFFDB000: 'BATB', 'TP-R07', Rev: 2, Len: 74
+20:701  0:000    13. AFFDA000: 'SLIC', 'TP-R07', Rev: 1, Len: 374
+20:701  0:000    14. AFFD9000: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1642
+20:701  0:000    15. AFFD8000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+20:701  0:000    16. AFFD7000: 'SSDT', 'CtdpB', Rev: 2, Len: 985
+20:701  0:000    17. AFFD6000: 'MSDM', 'TP-R07', Rev: 3, Len: 85
+20:701  0:000    18. AFFD4000: 'SSDT', 'NvOptTbl', Rev: 1, Len: 4101
+20:701  0:000    19. AFFD3000: 'SSDT', 'SgPch', Rev: 2, Len: 1842
+20:701  0:000    20. AFFD2000: 'ASF!', 'TP-R07', Rev: 32, Len: 165
+20:701  0:000    21. AFFFD000: 'FPDT', 'TP-R07', Rev: 1, Len: 68
+20:701  0:000    22. AFF1D000: 'UEFI', 'TP-R07', Rev: 1, Len: 318
+20:701  0:000    23. AFFD0000: 'BGRT', 'TP-R07', Rev: 1, Len: 56
+20:701  0:000  Found UEFI Acpi 1.0 RSDP at AFFFE000
+20:701  0:000  Printing ACPI tables from RSDP AFFFE000 ...
+20:701  0:000   AFFFE000: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+20:701  0:000    (Rsdt: AFFD1000)
+20:701  0:000    AFFD1000: 'RSDT', 'TP-R07', Rev: 1, Len: 128
+20:701  0:000    Tables in Rsdt: 23
+20:701  0:000    0. AFFF6000: 'FACP', 'TP-R07', Rev: 5, Len: 244
+20:701  0:000        (Dsdt: AFFE1000, Facs: AFF40000, XDsdt: AFFE1000, XFacs: 0)
+20:701  0:000        AFFE1000: 'DSDT', 'TP-R07', Rev: 2, Len: 69018
+20:702  0:001        AFF40000: 'FACS', Ver: 2, Len: 64
+20:702  0:000    1. AFF57000: 'UEFI', 'TP-R07', Rev: 1, Len: 66
+20:702  0:000    2. AFFF8000: 'SSDT', 'SaSsdt', Rev: 2, Len: 19863
+20:702  0:000    3. AFFF7000: 'SSDT', 'PerfTune', Rev: 2, Len: 1477
+20:702  0:000    4. AFFF5000: 'ECDT', 'TP-R07', Rev: 1, Len: 82
+20:702  0:000    5. AFFF4000: 'HPET', 'TP-R07', Rev: 1, Len: 56
+20:702  0:000    6. AFFF3000: 'APIC', 'TP-R07', Rev: 3, Len: 188
+20:702  0:000    7. AFFF2000: 'MCFG', 'TP-R07', Rev: 1, Len: 60
+20:702  0:000    8. AFFDF000: 'SSDT', 'SataAhci', Rev: 1, Len: 6354
+20:702  0:000    9. AFFDE000: 'DBGP', 'TP-R07', Rev: 1, Len: 52
+20:702  0:000    10. AFFDD000: 'DBG2', 'TP-R07', Rev: 0, Len: 84
+20:702  0:000    11. AFFDC000: 'BOOT', 'TP-R07', Rev: 1, Len: 40
+20:702  0:000    12. AFFDB000: 'BATB', 'TP-R07', Rev: 2, Len: 74
+20:702  0:000    13. AFFD9000: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1642
+20:702  0:000    14. AFFD8000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+20:702  0:000    15. AFFD7000: 'SSDT', 'CtdpB', Rev: 2, Len: 985
+20:702  0:000    16. AFFD6000: 'MSDM', 'TP-R07', Rev: 3, Len: 85
+20:702  0:000    17. AFFD4000: 'SSDT', 'NvOptTbl', Rev: 1, Len: 4101
+20:702  0:000    18. AFFD3000: 'SSDT', 'SgPch', Rev: 2, Len: 1842
+20:702  0:000    19. AFFD2000: 'ASF!', 'TP-R07', Rev: 32, Len: 165
+20:702  0:000    20. AFFFD000: 'FPDT', 'TP-R07', Rev: 1, Len: 68
+20:702  0:000    21. AFF1D000: 'UEFI', 'TP-R07', Rev: 1, Len: 318
+20:702  0:000    22. AFFD0000: 'BGRT', 'TP-R07', Rev: 1, Len: 56
