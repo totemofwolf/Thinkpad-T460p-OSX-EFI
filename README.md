@@ -1,14 +1,14 @@
 # Thinkpad-T460p-OSX-EFI
 * Hackintosh OSX EFI
-* T460p i7-6820HQ HD530 16G-DDR4 2k-Screen Sata3-SSD-128G DELL-DW1560
-* currently on macOS (Version 10.13)
+* T460p i7-6820HQ | HD530 | 16G-DDR4 | 2k-Screen | Sata3-SSD-128G | BCM94352z
+* currently on macOS (Version 10.13.6)
 * This repo is based on : [scottsanett repo](https://github.com/scottsanett/M5510-4K-High-Sierra-Installation)
 
 ## 🍺 Working:
 
 | *项目*        | *工作与否*    |  *备注*  |
 | --------   | -----:   | :----: |
-| CPU变频        | √      |   i7-6820HQ,0x191b0000    |
+| CPU变频        | √      |   i7-6820HQ,0x191b0000 |
 | SMBios        | √      |   MBP13,3    |
 | 🔊声卡        | √      |   ALC-293    |
 | 显卡        | √      |   Intel HD530 @2k  |
@@ -18,7 +18,7 @@
 | WiFi        | √      |   BCM-93452z    |
 | 蓝牙        | √      |       |
 | 📹摄像头        | √      |       |
-| USB-3.0        | √      |       |
+| USB-3.0        | √      |   速度：	最大 5 Gb/秒 |
 | 🔋电池        | √      |       |
 | 亮度快捷键       | √      |   F5,F6(Fn)    |
 | 声音快捷键        | √      |   F2,F3    |
