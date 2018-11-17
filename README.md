@@ -76,5 +76,5 @@ and rebuild kext cache using : `sudo kextcache -i /`
 
 ## HiDPI
 
-可以参考：[国光的开启hidpi博客](http://sqlsec.com/2018/09/hidpi.html)
+可以参考：[国光博客](http://sqlsec.com/2018/09/hidpi.html)
 `➜ sh -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi-zh.sh)"`
