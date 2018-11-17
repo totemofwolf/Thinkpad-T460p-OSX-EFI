@@ -1,8 +1,8 @@
 # Thinkpad-T460p-OSX-EFI
 * Hackintosh OSX EFI
-* T460p i7-6820HQ | HD530 | 16G-DDR4 | 2k-Screen | Sata3-SSD-128G | BCM94352z
+* T460p i7-6820HQ | HD530 | 16G-DDR4 2133 | 2k-Screen | Sata3-SSD-500G | BCM94352z
 * currently on macOS (Version 10.13.6)
-* This repo is based on : [scottsanett repo](https://github.com/scottsanett/M5510-4K-High-Sierra-Installation)
+* This repo is based on : [soulomoon/Dell-Precision-5510-High-Sierra repo](https://github.com/soulomoon/Dell-Precision-5510-High-Sierra) && [corenel/XPS9550-macOS repo](https://github.com/corenel/XPS9550-macOS)
 
 ## 🍺 Working:
 
@@ -41,7 +41,7 @@
 [10.12和10.13的核显framebuffer五国问题解决方案汇总](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1696023)
 
 
-## HDMI && miniDP
+## HDMI && miniDP support
 Inorder for hdmi to be able to output, you should add
 
 ``` bash
@@ -51,6 +51,17 @@ Inorder for hdmi to be able to output, you should add
 
 under `ConfigMap->dict` in `/System/Library/Extensions/AppleGraphicsControl.kext/Contents/PlugIns/AppleGraphicsDevicePolicy.kext/Contents/Info.plist`  
 and rebuild kext cache using : `sudo kextcache -i /`
+
+### 一个更妙的办法（不用担心每次安全更新后失效）
+
+使用 [corenel/XPS9550-macOS repo](https://github.com/corenel/XPS9550-macOS/tree/master/Kexts) 目录里的`AppleGraphicsDevicePolicyInjector.kext`
+
+## 变频
+
+使用 [corenel/XPS9550-macOS repo](https://github.com/corenel/XPS9550-macOS/tree/master/Kexts) 目录里的
+`X86PlatformPluginInjector.kext`。因为我的CPU是原生型号，其实不用搞这些花里胡哨的“优化”变频也很棒。
+也可以使用如下原理类似的命令来实现HWP：
+`➜ cd /tmp && curl -s https://raw.githubusercontent.com/Piker-Alpha/freqVectorsEdit.sh/master/freqVectorsEdit.sh > /tmp/freqVectorsEdit.sh && chmod +x freqVectorsEdit.sh && /tmp/freqVectorsEdit.sh && sudo rm -rf /tmp/freqVectorsEdit.sh && sudo rm -rf /tmp/Mac-*.bin`
 
 
 ## X86PlatformPlugin:
