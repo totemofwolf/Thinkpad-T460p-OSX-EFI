@@ -54,13 +54,13 @@ and rebuild kext cache using : `sudo kextcache -i /`
 
 ### 一个更妙的办法（不用担心每次安全更新后失效）
 
-使用 [corenel/XPS9550-macOS repo](https://github.com/corenel/XPS9550-macOS/tree/master/Kexts) 目录里的`AppleGraphicsDevicePolicyInjector.kext`
+使用 [corenel/XPS9550-macOS repo](https://github.com/corenel/XPS9550-macOS/tree/master/Kexts) 目录里的`AppleGraphicsDevicePolicyInjector.kext`放入/Library/Extensions，重建缓存。
 
 ## 变频
 
 使用 [corenel/XPS9550-macOS repo](https://github.com/corenel/XPS9550-macOS/tree/master/Kexts) 目录里的
-`X86PlatformPluginInjector.kext`。因为我的CPU是原生型号，其实不用搞这些花里胡哨的“优化”变频也很棒。
-也可以使用如下原理类似的命令来实现HWP：
+`X86PlatformPluginInjector.kext`放入/Library/Extensions，重建缓存。因为我的CPU是原生型号，其实不用搞这些花里胡哨的“优化”变频也很棒。
+也可以使用如下原理类似的命令来实现完美HWP：
 `➜ cd /tmp && curl -s https://raw.githubusercontent.com/Piker-Alpha/freqVectorsEdit.sh/master/freqVectorsEdit.sh > /tmp/freqVectorsEdit.sh && chmod +x freqVectorsEdit.sh && /tmp/freqVectorsEdit.sh && sudo rm -rf /tmp/freqVectorsEdit.sh && sudo rm -rf /tmp/Mac-*.bin`
 
 
