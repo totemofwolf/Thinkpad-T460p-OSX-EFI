@@ -73,3 +73,8 @@ and rebuild kext cache using : `sudo kextcache -i /`
   146    1 0xffffff7f8380a000 0x7000     0x7000     com.apple.driver.X86PlatformShim (1.0.0) 78933162-E3FE-3568-B4E0-6A6BD9DEA64A <142 117 13 7 4 3>
 
 ```
+
+## HiDPI
+
+可以参考：[国光的开启hidpi博客](http://sqlsec.com/2018/09/hidpi.html)
+`➜ sh -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi-zh.sh)"`
