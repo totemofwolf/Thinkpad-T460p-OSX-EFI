@@ -2,7 +2,7 @@
 * Hackintosh OSX EFI
 * T460p i7-6820HQ | HD530 | 16G-DDR4 2133 | 2k-Screen | Sata3-SSD-500G | BCM94352z
 * currently on macOS (Version 10.13.6)
-* This repo is based on : [soulomoon/Dell-Precision-5510-High-Sierra repo](https://github.com/soulomoon/Dell-Precision-5510-High-Sierra) && [corenel/XPS9550-macOS repo](https://github.com/corenel/XPS9550-macOS)
+* This repo is based on : [soulomoon/Dell-Precision-5510-High-Sierra](https://github.com/soulomoon/Dell-Precision-5510-High-Sierra) && [corenel/XPS9550-macOS](https://github.com/corenel/XPS9550-macOS)
 
 ## 🍺 Working:
 
