@@ -66,7 +66,7 @@ and rebuild kext cache using : `sudo kextcache -i /`
 
 ## X86PlatformPlugin:
 
-> 通常，我们可以通过勾选config的"PlusinType"加载X86，来实现更完整的节能选项，勾选后：
+> 通常，我们可以通过勾选config的"PluginType"加载X86，来实现更完整的节能选项，勾选后：
 ``` bash
   ~ kextstat| grep -i x86
   142    1 0xffffff7f837f3000 0x17000    0x17000    com.apple.driver.X86PlatformPlugin (1.0.0) 75F8D5F2-9BB7-3709-987C-35B5C1FCB727 <117 64 22 13 11 7 6 5 4 3 1>
