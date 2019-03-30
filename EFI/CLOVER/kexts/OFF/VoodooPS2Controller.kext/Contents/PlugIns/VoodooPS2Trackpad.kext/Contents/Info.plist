@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>16G29</string>
+	<string>17A358a</string>
 	<key>CFBundleExecutable</key>
 	<string>VoodooPS2Trackpad</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.8.27, Copyright Apple Computer, Inc. 2002-2003, mackerintel 2008, RehabMan 2012-2013</string>
+	<string>1.8.28, Copyright Apple Computer, Inc. 2002-2003, mackerintel 2008, RehabMan 2012-2013</string>
 	<key>CFBundleIdentifier</key>
 	<string>org.rehabman.voodoo.driver.PS2Trackpad</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.8.27</string>
+	<string>1.8.28a</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,149 +25,23 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.8.27</string>
+	<string>1.8.28</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>8E3004b</string>
+	<string>9M214v</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>12D75</string>
+	<string>17A350a</string>
 	<key>DTSDKName</key>
-	<string>macosx10.12</string>
+	<string>macosx10.13</string>
 	<key>DTXcode</key>
-	<string>0833</string>
+	<string>0900</string>
 	<key>DTXcodeBuild</key>
-	<string>8E3004b</string>
+	<string>9M214v</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>ALPS GlidePoint</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>org.rehabman.voodoo.driver.PS2Trackpad</string>
-			<key>IOClass</key>
-			<string>ApplePS2ALPSGlidePoint</string>
-			<key>IOProbeScore</key>
-			<integer>1500</integer>
-			<key>IOProviderClass</key>
-			<string>ApplePS2MouseDevice</string>
-			<key>Platform Profile</key>
-			<dict>
-				<key>Default</key>
-				<dict>
-					<key>DisableDevice</key>
-					<false/>
-				</dict>
-				<key>HPQOEM</key>
-				<dict>
-					<key>1411</key>
-					<string>ProBook</string>
-					<key>1619</key>
-					<string>ProBook</string>
-					<key>161C</key>
-					<string>ProBook</string>
-					<key>164F</key>
-					<string>ProBook</string>
-					<key>167C</key>
-					<string>ProBook</string>
-					<key>167E</key>
-					<string>ProBook</string>
-					<key>1680</key>
-					<string>ProBook</string>
-					<key>179B</key>
-					<string>ProBook</string>
-					<key>179C</key>
-					<string>ProBook</string>
-					<key>17A9</key>
-					<string>ProBook</string>
-					<key>17F0</key>
-					<string>ProBook</string>
-					<key>17F3</key>
-					<string>ProBook</string>
-					<key>17F6</key>
-					<string>ProBook</string>
-					<key>1942</key>
-					<string>ProBook</string>
-					<key>1949</key>
-					<string>ProBook</string>
-					<key>198F</key>
-					<string>ProBook</string>
-					<key>ProBook</key>
-					<dict>
-						<key>DisableDevice</key>
-						<true/>
-					</dict>
-					<key>ProBook-102</key>
-					<string>ProBook</string>
-					<key>ProBook-87</key>
-					<string>ProBook</string>
-				</dict>
-			</dict>
-		</dict>
-		<key>Sentelic FSP</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>org.rehabman.voodoo.driver.PS2Trackpad</string>
-			<key>IOClass</key>
-			<string>ApplePS2SentelicFSP</string>
-			<key>IOProbeScore</key>
-			<integer>5500</integer>
-			<key>IOProviderClass</key>
-			<string>ApplePS2MouseDevice</string>
-			<key>Platform Profile</key>
-			<dict>
-				<key>Default</key>
-				<dict>
-					<key>DisableDevice</key>
-					<false/>
-				</dict>
-				<key>HPQOEM</key>
-				<dict>
-					<key>1411</key>
-					<string>ProBook</string>
-					<key>1619</key>
-					<string>ProBook</string>
-					<key>161C</key>
-					<string>ProBook</string>
-					<key>164F</key>
-					<string>ProBook</string>
-					<key>167C</key>
-					<string>ProBook</string>
-					<key>167E</key>
-					<string>ProBook</string>
-					<key>1680</key>
-					<string>ProBook</string>
-					<key>179B</key>
-					<string>ProBook</string>
-					<key>179C</key>
-					<string>ProBook</string>
-					<key>17A9</key>
-					<string>ProBook</string>
-					<key>17F0</key>
-					<string>ProBook</string>
-					<key>17F3</key>
-					<string>ProBook</string>
-					<key>17F6</key>
-					<string>ProBook</string>
-					<key>1942</key>
-					<string>ProBook</string>
-					<key>1949</key>
-					<string>ProBook</string>
-					<key>198F</key>
-					<string>ProBook</string>
-					<key>ProBook</key>
-					<dict>
-						<key>DisableDevice</key>
-						<true/>
-					</dict>
-					<key>ProBook-102</key>
-					<string>ProBook</string>
-					<key>ProBook-87</key>
-					<string>ProBook</string>
-				</dict>
-			</dict>
-		</dict>
 		<key>Synaptics TouchPad</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
@@ -239,9 +113,9 @@
 				<key>Default</key>
 				<dict>
 					<key>BogusDeltaThreshX</key>
-					<integer>400</integer>
+					<integer>0</integer>
 					<key>BogusDeltaThreshY</key>
-					<integer>350</integer>
+					<integer>0</integer>
 					<key>ButtonCount</key>
 					<integer>3</integer>
 					<key>CenterX</key>
@@ -313,9 +187,9 @@
 					<key>DisableZoneTop</key>
 					<integer>99999</integer>
 					<key>DivisorX</key>
-					<integer>1</integer>
+					<integer>5</integer>
 					<key>DivisorY</key>
-					<integer>1</integer>
+					<integer>5</integer>
 					<key>DoubleTapThresholdX</key>
 					<integer>100</integer>
 					<key>DoubleTapThresholdY</key>
@@ -357,7 +231,7 @@
 					<key>MomentumScrollSamplesMin</key>
 					<integer>3</integer>
 					<key>MomentumScrollThreshY</key>
-					<integer>6</integer>
+					<integer>18</integer>
 					<key>MomentumScrollTimer</key>
 					<integer>10000000</integer>
 					<key>MouseCount</key>
@@ -373,15 +247,15 @@
 					<key>MouseScrollMultiplierY</key>
 					<integer>20</integer>
 					<key>MultiFingerHorizontalDivisor</key>
-					<integer>1</integer>
+					<integer>13</integer>
 					<key>MultiFingerVerticalDivisor</key>
-					<integer>1</integer>
+					<integer>13</integer>
 					<key>MultiFingerWLimit</key>
 					<integer>9</integer>
 					<key>QuietTimeAfterTyping</key>
 					<integer>500000000</integer>
 					<key>Resolution</key>
-					<integer>2400</integer>
+					<integer>400</integer>
 					<key>RightClickZoneBottom</key>
 					<integer>0</integer>
 					<key>RightClickZoneLeft</key>
@@ -395,7 +269,7 @@
 					<key>ScrollDeltaThreshY</key>
 					<integer>0</integer>
 					<key>ScrollResolution</key>
-					<integer>2800</integer>
+					<integer>400</integer>
 					<key>SkipPassThrough</key>
 					<false/>
 					<key>SmoothInput</key>
@@ -417,7 +291,7 @@
 					<key>TapThresholdY</key>
 					<integer>50</integer>
 					<key>USBMouseStopsTrackpad</key>
-					<integer>1</integer>
+					<integer>0</integer>
 					<key>UnitsPerMMX</key>
 					<integer>50</integer>
 					<key>UnitsPerMMY</key>
@@ -427,7 +301,7 @@
 					<key>UseHighRate</key>
 					<true/>
 					<key>VerticalScrollDivisor</key>
-					<integer>1</integer>
+					<integer>0</integer>
 					<key>WakeDelay</key>
 					<integer>1000</integer>
 					<key>ZLimit</key>
@@ -488,9 +362,9 @@
 				<key>LENOVO</key>
 				<dict>
 					<key>BogusDeltaThreshX</key>
-					<integer>400</integer>
+					<integer>100</integer>
 					<key>BogusDeltaThreshY</key>
-					<integer>350</integer>
+					<integer>100</integer>
 					<key>ClickPad</key>
 					<dict>
 						<key>EdgeBottom</key>
@@ -584,11 +458,11 @@
 		<key>com.apple.kpi.mach</key>
 		<string>9.0.0</string>
 		<key>org.rehabman.voodoo.driver.PS2Controller</key>
-		<string>1.8.27</string>
+		<string>1.8.28</string>
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Console</string>
 	<key>Source Code</key>
-	<string>https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller</string>
+	<string>https://github.com/tluck/OS-X-Voodoo-PS2-Controller</string>
 </dict>
 </plist>
