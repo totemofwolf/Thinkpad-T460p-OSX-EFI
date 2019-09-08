@@ -1,14 +1,29 @@
 # Thinkpad-T460p-OSX-EFI
 
+
+## 20190908 changelog
+
+``` bash
+- *) upgrade to AirportBrcmFixup-2.0.3.kext
+- *) upgrade to AppleALC-1.4.1.kext
+- *) upgrade to CPUFriend-1.1.9.kext
+- *) upgrade to DisplayEDID-30e4-49a.kext
+- *) upgrade to Lilu-1.3.8.kext
+- *) upgrade to NoTouchID-1.0.2.kext
+- *) upgrade to VoodooPS2Controller-2.0.3.kext
+- *) upgrade to WhateverGreen-1.3.2.kext
+- *) fix sleep issue
+```
+
 ## 20190522 更新
 
 * add support for 10.14.6
 
 ``` bash
 # for 10.13.6 user, use:
-git clone https://github.com/totemofwolf/Thinkpad-T460p-OSX-EFI.git
+git clone -b 10.13.6 https://github.com/totemofwolf/Thinkpad-T460p-OSX-EFI.git
 cd Thinkpad-T460p-OSX-EFI
-git checkout 10.13.6
+# git checkout 10.13.6
 ```
 
 ---
