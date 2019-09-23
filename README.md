@@ -107,4 +107,4 @@ and rebuild kext cache using : `sudo kextcache -i /`
 
 可以参考：[国光博客](http://sqlsec.com/2018/09/hidpi.html)
 
-`➜ sh -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi-zh.sh)"`
+`➜ sh -c "$(curl -fsSL https://raw.githubusercontent.com/xzhih/one-key-hidpi/master/hidpi.sh)"`
