@@ -16,6 +16,8 @@
 			<dict>
 				<key>AddHDMI</key>
 				<false/>
+				<key>AddPNLF</key>
+				<false/>
 				<key>FixHPET</key>
 				<false/>
 				<key>FixIPIC</key>
@@ -43,6 +45,80 @@
 					<key>Replace</key>
 					<data>
 					WFExNA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>SMBU to SBUS</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					U01CVQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					U0JVUw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>EC to EC0</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUNfXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUMwXw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>H_EC to EC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					SF9FQw==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUMwXw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>LID to LID0</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					TElEXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					TElEMA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>LID0:_PRW to XPRW</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					X1BSVw==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFBSVw==
+					</data>
+					<key>TgtBridge</key>
+					<data>
+					TElEMA==
 					</data>
 				</dict>
 				<dict>
@@ -89,34 +165,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change EHC1 to EH01</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					RUhDMQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUgwMQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change EHC2 to EH02</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					RUhDMg==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUgwMg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change GFX0 to IGPU</string>
 					<key>Disabled</key>
 					<false/>
@@ -127,20 +175,6 @@
 					<key>Replace</key>
 					<data>
 					SUdQVQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change HDAS to HDEF</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					SERBUw==
-					</data>
-					<key>Replace</key>
-					<data>
-					SERFRg==
 					</data>
 				</dict>
 				<dict>
@@ -173,118 +207,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change Method(XWAK,0,N) to ZWAK, pair with SSDT-XWAK.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					WFdBSwA=
-					</data>
-					<key>Replace</key>
-					<data>
-					WldBSwA=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change Method(XWAK,0,S) to ZWAK, pair with SSDT-XWAK.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					WFdBSwg=
-					</data>
-					<key>Replace</key>
-					<data>
-					WldBSwg=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change Method(XSEL,0,N) to XSEZ, pair with SSDT-XSEL.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					WFNFTAA=
-					</data>
-					<key>Replace</key>
-					<data>
-					WFNFWgA=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change Method(XSEL,0,S) to XSEZ, pair with SSDT-XSEL.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					WFNFTAg=
-					</data>
-					<key>Replace</key>
-					<data>
-					WFNFWgg=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change Method(ESEL,0,N) to ESEZ, pair with SSDT-ESEL.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					RVNFTAA=
-					</data>
-					<key>Replace</key>
-					<data>
-					RVNFWgA=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change Method(ESEL,0,S) to ESEZ, pair with SSDT-ESEL.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					RVNFTAg=
-					</data>
-					<key>Replace</key>
-					<data>
-					RVNFWgg=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					R1BSVwI=
-					</data>
-					<key>Replace</key>
-					<data>
-					WFBSVwI=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Method(UPRW,2,N) to XPRW</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					VVBSVwpwEg==
-					</data>
-					<key>Replace</key>
-					<data>
-					WFBSVwpwEg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>LANC Method(_PRW,0,S) to Method(XPRW,0,..)</string>
 					<key>Disabled</key>
 					<false/>
@@ -295,34 +217,6 @@
 					<key>Replace</key>
 					<data>
 					AAAZABQfWFBSVwg=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Method(_PTS,1,N) to ZPTS</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X1BUUwE=
-					</data>
-					<key>Replace</key>
-					<data>
-					WlBUUwE=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Method(_WAK,1,N) to ZWAK</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X1dBSwE=
-					</data>
-					<key>Replace</key>
-					<data>
-					WldBSwE=
 					</data>
 				</dict>
 				<dict>
@@ -389,11 +283,39 @@
 					SUdCRQ==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>_PTS to ZPTS(1,N)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1BUUwE=
+					</data>
+					<key>Replace</key>
+					<data>
+					WlBUUwE=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>_WAK to ZWAK(1,N)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1dBSwE=
+					</data>
+					<key>Replace</key>
+					<data>
+					WldBSwE=
+					</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
 			<key>SlpSmiAtWake</key>
-			<false/>
+			<true/>
 			<key>SuspendOverride</key>
 			<false/>
 		</dict>
@@ -408,6 +330,18 @@
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>CPUpm</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>CPU0IST</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
@@ -434,7 +368,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>nv_disable=1 -igfxnohdmi dart=0</string>
+		<string>nv_disable=1 dart=0 enable-hdmi20</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -468,19 +402,159 @@
 		<false/>
 		<key>Properties</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,0,0</string>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Host Bridge/DRAM Registers</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,0</string>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor PCIe Controller (x16)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2</string>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor PCIe Controller (x4)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,20,0</string>
+				<key>device_type</key>
+				<string>USB controller</string>
+				<key>model</key>
+				<string>100 Series/C230 Series Chipset Family USB 3.0 xHCI Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x14,0x2)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,20,2</string>
+				<key>device_type</key>
+				<string>Signal processing controller</string>
+				<key>model</key>
+				<string>100 Series/C230 Series Chipset Family Thermal Subsystem</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x16,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,22,0</string>
+				<key>device_type</key>
+				<string>Communication controller</string>
+				<key>model</key>
+				<string>100 Series/C230 Series Chipset Family MEI Controller #1</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x17,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,23,0</string>
+				<key>device_type</key>
+				<string>SATA controller</string>
+				<key>model</key>
+				<string>HM170/QM170 Chipset SATA Controller [AHCI Mode]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,0</string>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>100 Series/C230 Series Chipset Family PCI Express Root Port #1</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,0/0,0</string>
+				<key>device_type</key>
+				<string>Network controller</string>
+				<key>model</key>
+				<string>BCM4352 802.11ac Wireless Network Adapter</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x4)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,4</string>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>100 Series/C230 Series Chipset Family PCI Express Root Port #5</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x4)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,4/0,0</string>
+				<key>device_type</key>
+				<string>Unassigned class</string>
+				<key>model</key>
+				<string>RTS522A PCI Express Card Reader</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,0</string>
+				<key>device_type</key>
+				<string>ISA bridge</string>
+				<key>model</key>
+				<string>QM170 Chipset LPC/eSPI Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x2)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,2</string>
+				<key>device_type</key>
+				<string>Memory controller</string>
+				<key>model</key>
+				<string>100 Series/C230 Series Chipset Family Power Management Controller</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,3</string>
 				<key>device-id</key>
 				<data>
 				cKEAAA==
 				</data>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 				<key>layout-id</key>
 				<data>
 				HAAAAA==
 				</data>
+				<key>model</key>
+				<string>100 Series/C230 Series Chipset Family HD Audio Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x4)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,4</string>
+				<key>device_type</key>
+				<string>SMBus</string>
+				<key>model</key>
+				<string>100 Series/C230 Series Chipset Family SMBus</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x6)</key>
 			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,6</string>
+				<key>device_type</key>
+				<string>Ethernet controller</string>
+				<key>model</key>
+				<string>Ethernet Connection (2) I219-LM</string>
 				<key>name</key>
 				<data>
 				ABkA
@@ -492,10 +566,14 @@
 				<data>
 				AAAbGQ==
 				</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,2,0</string>
 				<key>device-id</key>
 				<data>
 				GxkAAA==
 				</data>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
 				<key>disable-external-gpu</key>
 				<data>
 				AQAAAA==
@@ -524,8 +602,16 @@
 				<data>
 				AAAwAQ==
 				</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>model</key>
+				<string>Intel HD Graphics 530</string>
 			</dict>
 		</dict>
+		<key>SetIntelBacklight</key>
+		<false/>
+		<key>SetIntelMaxBacklight</key>
+		<false/>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -535,6 +621,8 @@
 			<key>Inject</key>
 			<false/>
 		</dict>
+		<key>UseIntelHDMI</key>
+		<true/>
 	</dict>
 	<key>GUI</key>
 	<dict>
@@ -797,15 +885,9 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
-		<key>ROM</key>
-		<data>
-		dvfYpTbK
-		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>Mobile</key>
-		<true/>
 		<key>ProductName</key>
 		<string>MacBookPro13,3</string>
 	</dict>

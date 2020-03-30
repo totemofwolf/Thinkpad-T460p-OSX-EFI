@@ -1,6 +1,16 @@
 # Thinkpad-T460p-OSX-EFI
 
 
+## 20200330 changelog
+
+``` bash
+- *) upgrade to AirportBrcmFixup-2.0.6.kext
+- *) upgrade to AppleALC-1.4.6.kext
+- *) upgrade to Lilu-1.4.1.kext
+- *) upgrade to NoTouchID-1.0.3.kext
+- *) upgrade to WhateverGreen-1.3.6.kext
+```
+
 ## 20190908 changelog
 
 ``` bash
