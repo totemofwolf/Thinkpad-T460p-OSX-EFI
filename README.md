@@ -1,7 +1,12 @@
 # Thinkpad-T460p-OSX-EFI
 
+## 20201121 更新
 
-## 20200330 changelog
+``` bash
+- *) upgrade README.md for macOS Catalina support
+```
+
+## 20200330 更新
 
 ``` bash
 - *) upgrade to AirportBrcmFixup-2.0.6.kext
@@ -11,7 +16,7 @@
 - *) upgrade to WhateverGreen-1.3.6.kext
 ```
 
-## 20190908 changelog
+## 20190908 更新
 
 ``` bash
 - *) upgrade to AirportBrcmFixup-2.0.3.kext
@@ -30,10 +35,15 @@
 * add support for 10.14.6
 
 ``` bash
+# for macOS Catalina 10.14.6 user, use default branch:
+git clone https://github.com/totemofwolf/Thinkpad-T460p-OSX-EFI.git
+cd Thinkpad-T460p-OSX-EFI
+git checkout master
+
 # for 10.13.6 user, use:
 git clone -b 10.13.6 https://github.com/totemofwolf/Thinkpad-T460p-OSX-EFI.git
 cd Thinkpad-T460p-OSX-EFI
-# git checkout 10.13.6
+git checkout 10.13.6
 ```
 
 ---
